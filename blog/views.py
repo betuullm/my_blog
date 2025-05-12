@@ -1,5 +1,5 @@
 from django.shortcuts import render, get_object_or_404, redirect
-from .models import Post, PostImage
+from .models import Post, PostImage, About
 from .forms import PostForm, PostImageFormSet
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.forms import UserCreationForm
@@ -43,4 +43,5 @@ def signup(request):
     return render(request, 'registration/signup.html', {'form': form})
 
 def about(request):
-    return render(request, 'blog/about.html')
+    about_obj = About.objects.first()
+    return render(request, 'blog/about.html', {'about': about_obj})

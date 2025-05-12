@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Post
+from .models import Post, About
 from django.utils.html import format_html
 
 @admin.register(Post)
@@ -24,3 +24,8 @@ class PostAdmin(admin.ModelAdmin):
     image_tag.short_description = 'Görsel Önizleme'
     image_tag.allow_tags = True
     readonly_fields = ('image_tag', 'created_at', 'updated_at')
+
+@admin.register(About)
+class AboutAdmin(admin.ModelAdmin):
+    list_display = ('title',)
+    search_fields = ('title', 'content')
