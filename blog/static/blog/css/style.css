@@ -5,18 +5,17 @@ body {
     line-height: 1.6;
     font-weight: 400;
     margin: 0;
-
-    padding-top: 40px;
+    padding-top: 0; 
 }
 
 header {
     background: linear-gradient(90deg, #a259c6 0%, #3f51b5 100%);
-    padding: 20px 0 0 0;
+    padding: 10px 0 10px 0; 
     border-bottom: none;
-    width: 100%; /* düzeltildi: 100vw yerine 100% */
-    margin: 0 auto; /* düzeltildi: ortala ve sağa kaymayı engelle */
+    width: 100%;
+    margin: 0 auto;
     box-shadow: 0 2px 16px rgba(0,0,0,0.08);
-    position: fixed; /* düzeltildi: header'ı sabitle */
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
@@ -27,10 +26,11 @@ header h1 {
     margin: 0;
     bottom: 10px;
     font-size: 2.5em;
+    line-height: 1.2;
 }
 
 nav {
-    margin-top: 10px;
+    margin-top: 0;
 }
 
 nav a {
@@ -45,7 +45,7 @@ nav a:hover {
 }
 
 main {
-    padding-top: 110px !important; /* header yüksekliği kadar boşluk bırak */
+    padding-top: 110px !important; 
 }
 
 .post {
