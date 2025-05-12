@@ -37,11 +37,12 @@ nav a {
 }
 
 nav a:hover {
-    text-decoration: underline;
+    color: #a259c6;
+    text-decoration: none;
 }
 
 main {
-    padding-top: 0px !important; /* header ile içerik arasına daha fazla boşluk */
+    padding-top: 80px !important; /* header ile içerik arasına daha fazla boşluk */
 }
 
 .post {
@@ -111,7 +112,6 @@ h1, h2, h3, .logo-text, .about-title {
     font-weight: 700 !important;
 }
 
-/* Kartların üstünde boşluk bırakmak için */
 .post-list-grid, .about-box {
     margin-top: 2.5rem;
 }
