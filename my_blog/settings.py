@@ -121,8 +121,8 @@ if not DEBUG:
         'API_KEY': os.environ.get('CLOUDINARY_API_KEY'),
         'API_SECRET': os.environ.get('CLOUDINARY_API_SECRET'),
     }
-    MEDIA_URL = None
-    MEDIA_ROOT = None
+    MEDIA_URL = '/media/'
+    MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 else:
     MEDIA_URL = '/media/'
     MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
